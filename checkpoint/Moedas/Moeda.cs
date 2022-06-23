@@ -1,4 +1,4 @@
-﻿namespace checkpoint
+﻿namespace checkpoint.Moedas
 {
     public abstract class Moeda
     {
@@ -7,8 +7,8 @@
 
         public Moeda(string tipo, string nome)
         {
-            this.Tipo = tipo;
-            this.Nome = nome;
+            Tipo = tipo;
+            Nome = nome;
         }
 
         public abstract decimal Conversao(decimal valor);
@@ -16,14 +16,4 @@
     }
 }
 
-        
-//        
 
-//        public void ConversaoEuro(double valorEmReais, double cotacaoEuro)
-//        {
-
-//        }
-        
-
-//    }
-//}

@@ -1,5 +1,4 @@
-﻿
-namespace checkpoint
+﻿namespace checkpoint.Moedas
 {
     internal class Iene : Moeda
     {

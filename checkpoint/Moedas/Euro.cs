@@ -1,4 +1,4 @@
-﻿namespace checkpoint
+﻿namespace checkpoint.Moedas
 {
     internal class Euro : Moeda
     {
