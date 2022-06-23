@@ -14,9 +14,14 @@ namespace checkpoint
 
             //Após leitura do valor a ser convertido, exibir um menu para selecionar para qual moeda o usuário deseja converter: dólar($), euro(€), iene(¥) ou libra esterlina(£).
 
-            //chamar método ConversaoDolar
 
-            //uso de Dictionary e utilize - o para armazenar o valor de cada moeda que será usado na conversão.
+
+            //Opcional
+
+            // Fazer o controle de versionamento da sua aplicação usando Git;
+            // Subir a aplicação para um repositório do Github.
+            // Estude o uso de Dictionary e utilize-o para armazenar o valor de cada moeda que será usado na conversão.
+
 
 
         }

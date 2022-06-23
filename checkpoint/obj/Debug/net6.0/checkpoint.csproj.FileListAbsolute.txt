@@ -1,0 +1,5 @@
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.csproj.AssemblyReference.cache
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.AssemblyInfoInputs.cache
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.AssemblyInfo.cs
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.csproj.CoreCompileInputs.cache
