@@ -3,7 +3,7 @@
     public class Menu
     {
         public Dictionary<string, Moeda> Conversoes { get; private set; } 
-        public string Tela { get; set; }
+        public string Tela { get; set; } //propriedade que mostrará na tela do usuário
      
 
         public Menu()
@@ -20,12 +20,10 @@
             this.Conversoes.Add("4", libra);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="operacao"></param>
-        /// <param name="valor"></param>
-        /// <exception cref="Exception"></exception>
+        //Metodo que chamará o metodo de conversão
+        //Primeramente, ele verificará se a Key informada pelo usuário existe, se existir ele exibirá na tela o calculo de Conversão da classe (moeda)
+        //se não existir, vai informar que a opão não foi encontrada
+        //Esse metodo será chamado na Classe Interface que é a comunicação direta com o usuário 
         public void Conversao(string operacao,decimal valor)
         {
             if(!this.Conversoes.ContainsKey(operacao))
