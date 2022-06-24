@@ -2,15 +2,9 @@
 {
     internal class Libra : Moeda
     {
-        public Libra(string tipo, string nome) : base("£", "libra")
+        public Libra() : base("en-GB", 6.95m)
         {
 
-        }
-
-        public override decimal Conversao(decimal valor)
-        {
-            decimal cotacaoLibra = 6.95m;
-            return valor / cotacaoLibra;
         }
     }
 }

@@ -3,3 +3,18 @@ C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.Ge
 C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.AssemblyInfoInputs.cache
 C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.AssemblyInfo.cs
 C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.csproj.CoreCompileInputs.cache
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\bin\Debug\net6.0\checkpoint.exe
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\bin\Debug\net6.0\checkpoint.deps.json
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\bin\Debug\net6.0\checkpoint.runtimeconfig.json
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\bin\Debug\net6.0\checkpoint.dll
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\bin\Debug\net6.0\checkpoint.pdb
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.csproj.AssemblyReference.cache
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.AssemblyInfoInputs.cache
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.AssemblyInfo.cs
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.csproj.CoreCompileInputs.cache
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.dll
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\refint\checkpoint.dll
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.pdb
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.genruntimeconfig.cache
+C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\ref\checkpoint.dll

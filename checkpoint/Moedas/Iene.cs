@@ -2,15 +2,9 @@
 {
     internal class Iene : Moeda
     {
-        public Iene(string tipo, string nome) : base("£", "Iene")
+        public Iene() : base("jp-JP", 0.052m)
         {
 
-        }
-
-        public override decimal Conversao(decimal valor)
-        {
-            decimal cotacaoIene = 0.052m;
-            return valor / cotacaoIene;
         }
     }
 }

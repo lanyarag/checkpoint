@@ -2,15 +2,10 @@
 {
     internal class Dolar : Moeda
     {
-        public Dolar(string tipo, string nome) : base("$", "dolar")
+        public Dolar() : base("en-US", 4.5m)
         {
 
         }
 
-        public override decimal Conversao(decimal valor)
-        {
-            decimal cotacaoDolar = 4.5m;
-            return valor / cotacaoDolar;
-        }
     }
 }
