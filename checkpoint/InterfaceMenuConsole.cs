@@ -12,49 +12,50 @@ namespace checkpoint
         private Menu menu; //implementamos essa classe para conseguirmos manipular o menu e interagir com o usuário
         public InterfaceMenuConsole()
         {
-            menu = new Menu(); 
+            menu = new Menu();
         }
         //Operações que serão realizadas quando o usuário digitar a opção desejada        
         public void MenuIniciar()
         {
-            int opcao; 
-            try
-            {
-                do
-                {
-                    opcao = Menu();
-                    switch (opcao)
-                    {
-                        case 0:
-                            break;
-                        default:
-                            this.menu.Conversao(opcao.ToString(), LerValor()); //criei o metodo LerValor, para somente ler o valor que o usuário deseja converter
-                            Console.WriteLine(this.menu.Tela);//após realizar o metodo conversão, irá exibir para o usuário o resultado
-                            break;
+            string opcao;
+            //try
+            //{
 
-                    }
-                } while (opcao != 0);
-            }
-            catch (Exception ex)
+            do
             {
-                Console.WriteLine(ex.Message);
-            }                       
+                opcao = Menu();
+                if (opcao != "0")
+                {
+                    this.menu.Conversao(opcao, LerValor()); //criei o metodo LerValor, para somente ler o valor que o usuário deseja converter
+                    Console.WriteLine(this.menu.Tela);//após realizar o metodo conversão, irá exibir para o usuário o resultado
+                }
+                else 
+                { 
+                    Console.WriteLine("Fechando o programa");
+                }
+            } while (opcao != "0");
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
         }
 
         //criamos o Menu para ser exibido no metodo acima "Menu Iniciar"
-        private int Menu()
+        private string Menu()
         {
             Console.WriteLine("-----------------------------------");
             Console.WriteLine("CONVERSOR DE MOEDAS EM REAL\n");
             Console.WriteLine("Informe para qual moeda deseja converter:");
-            foreach (var opcao in this.menu.Conversoes) //imprimirá todos os itens do dicionário e já com a simbologia e nome da moeda (definimos isso na calsse Moeda, com o CultureInfo)
+            foreach (var opcao in this.menu.Conversoes) //imprimirá todos os itens do dicionário e já com a simbologia e nome da moeda (definimos isso na classe Moeda, com o CultureInfo)
             {
                 Console.WriteLine($"{opcao.Key} - {opcao.Value.Nome}");
-            }            
+            }
             Console.WriteLine("0 - Sair");
             Console.WriteLine("-----------------------------------");
 
-            return int.Parse(Console.ReadLine() + "");
+            return Console.ReadLine();
         }
 
         //Metodo para ler o que o usuário digitar, e se caso seja digitado qualquer coisa diferente de número, ficará pedindo para o usuário digitar um número

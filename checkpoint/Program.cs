@@ -8,8 +8,11 @@ namespace checkpoint
     {
         static void Main(string[] args)
         {
+
             InterfaceMenuConsole menu = new InterfaceMenuConsole();
             menu.MenuIniciar();
+
+
             //Ao abrir a aplicação solicite o valor em real(R$) que o usuário deseja converter
             //Console.WriteLine("Qual o valor em reais que você deseja converter?");
             //double ValorEmReal = double.Parse(Console.ReadLine());

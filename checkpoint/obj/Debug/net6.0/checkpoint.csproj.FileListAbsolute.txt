@@ -18,3 +18,13 @@ C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Deb
 C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.pdb
 C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\checkpoint.genruntimeconfig.cache
 C:\Users\ingridg\Documents\DIGITAL HOUSE\Visual Studio\Aula15\checkpoint\obj\Debug\net6.0\ref\checkpoint.dll
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\bin\Debug\net6.0\checkpoint.exe
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\bin\Debug\net6.0\checkpoint.deps.json
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\bin\Debug\net6.0\checkpoint.runtimeconfig.json
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\bin\Debug\net6.0\checkpoint.dll
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\bin\Debug\net6.0\checkpoint.pdb
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.dll
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\refint\checkpoint.dll
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.pdb
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\checkpoint.genruntimeconfig.cache
+C:\Users\anderlanys\Desktop\checkpoint\checkpoint\obj\Debug\net6.0\ref\checkpoint.dll

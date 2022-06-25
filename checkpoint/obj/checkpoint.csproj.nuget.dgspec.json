@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula15\\checkpoint\\checkpoint.csproj": {}
+    "C:\\Users\\anderlanys\\Desktop\\checkpoint\\checkpoint\\checkpoint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula15\\checkpoint\\checkpoint.csproj": {
+    "C:\\Users\\anderlanys\\Desktop\\checkpoint\\checkpoint\\checkpoint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula15\\checkpoint\\checkpoint.csproj",
+        "projectUniqueName": "C:\\Users\\anderlanys\\Desktop\\checkpoint\\checkpoint\\checkpoint.csproj",
         "projectName": "checkpoint",
-        "projectPath": "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula15\\checkpoint\\checkpoint.csproj",
-        "packagesPath": "C:\\Users\\ingridg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ingridg\\Documents\\DIGITAL HOUSE\\Visual Studio\\Aula15\\checkpoint\\obj\\",
+        "projectPath": "C:\\Users\\anderlanys\\Desktop\\checkpoint\\checkpoint\\checkpoint.csproj",
+        "packagesPath": "C:\\Users\\anderlanys\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anderlanys\\Desktop\\checkpoint\\checkpoint\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ingridg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\anderlanys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

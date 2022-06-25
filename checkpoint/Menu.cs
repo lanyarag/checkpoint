@@ -2,9 +2,16 @@
 {
     public class Menu
     {
-        public Dictionary<string, Moeda> Conversoes { get; private set; } 
+        public Dictionary<NomeMoeda, Moeda> Conversoes { get; private set; } 
         public string Tela { get; set; } //propriedade que mostrará na tela do usuário
-     
+        
+        public enum NomeMoeda
+        {
+            DOLAR,
+            EURO,
+            IENE,
+            LIBRA
+        }
 
         public Menu()
         {
@@ -13,11 +20,11 @@
             Moeda iene = new Iene();
             Moeda libra = new Libra();
 
-            this.Conversoes = new Dictionary<string, Moeda>();
-            this.Conversoes.Add("1", dolar);
-            this.Conversoes.Add("2", euro);
-            this.Conversoes.Add("3", iene);
-            this.Conversoes.Add("4", libra);
+            this.Conversoes = new Dictionary<NomeMoeda, Moeda>();
+            this.Conversoes.Add(NomeMoeda.DOLAR, dolar);
+            this.Conversoes.Add(NomeMoeda.EURO, euro);
+            this.Conversoes.Add(NomeMoeda.IENE, iene);
+            this.Conversoes.Add(NomeMoeda.LIBRA, libra);
         }
 
         //Metodo que chamará o metodo de conversão
@@ -26,13 +33,28 @@
         //Esse metodo será chamado na Classe Interface que é a comunicação direta com o usuário 
         public void Conversao(string operacao,decimal valor)
         {
-            if(!this.Conversoes.ContainsKey(operacao))
+            NomeMoeda nomeMoeda;
+
+            try
             {
-                throw new Exception("Opção não encontrada");
+                nomeMoeda = (NomeMoeda)Enum.Parse(typeof(NomeMoeda), operacao, true);
+
+                this.Tela = " " + this.Conversoes[nomeMoeda].Tipo + " " + this.Conversoes[nomeMoeda].FormatarValor(this.Conversoes[nomeMoeda].Conversao(valor));
+
             }
-           this.Tela = (" " + this.Conversoes[operacao].Tipo + " " + this.Conversoes[operacao].FormatarValor(this.Conversoes[operacao].Conversao(valor)));
+            catch (ArgumentException erro)
+            {
+                Console.WriteLine("Opção não encontrada");
+            }
             
-        }    
+            
+        }
+        //public void Conversao(NomeMoeda nomeMoeda, decimal valor)
+        //{
+        //      //this.Tela = " " + this.Conversoes[nomeMoeda].Tipo
+        //      //  + " "
+        //      //  + this.Conversoes[nomeMoeda].FormatarValor(this.Conversoes[nomeMoeda].Conversao(valor));
+        //}
 
     }
 }

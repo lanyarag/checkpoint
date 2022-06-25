@@ -31,7 +31,7 @@ namespace checkpoint.Moedas
         //realizará o calculo de conversão sempre que for chamado
         public decimal Conversao(decimal valor)
         {
-            return valor * this.Cotacao;
+            return valor / this.Cotacao;
         }
 
     }
