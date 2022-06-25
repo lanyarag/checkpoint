@@ -29,9 +29,10 @@ namespace checkpoint.Moedas
             return valor.ToString(this.cultureInfo.NumberFormat);
         }
         //realizará o calculo de conversão sempre que for chamado
-        public decimal Conversao(decimal valor)
+        public decimal Conversao(decimal valor, Moeda de)
         {
-            return valor * this.Cotacao;
+            decimal valorReal = valor * de.Cotacao;
+            return valorReal / this.Cotacao;
         }
 
     }
