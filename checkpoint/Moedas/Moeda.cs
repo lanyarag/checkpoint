@@ -26,7 +26,7 @@ namespace checkpoint.Moedas
         //formatara o valor que o usuário digitar
         public string FormatarValor(decimal valor)
         {
-            return valor.ToString(this.cultureInfo.NumberFormat);
+            return  string.Format(this.cultureInfo.NumberFormat, "{0:0.00}", valor);
         }
         //realizará o calculo de conversão sempre que for chamado
         public decimal Conversao(decimal valor, Moeda de)
