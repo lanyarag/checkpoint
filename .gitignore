@@ -363,3 +363,11 @@ MigrationBackup/
 FodyWeavers.xsd
 
 .vscode
+.vs
+checkpoint/vscode
+checkpoint/vs
+checkpoint/obj
+checkpoint/bin
+.obj
+.bin
+
