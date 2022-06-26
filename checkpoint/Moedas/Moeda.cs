@@ -17,7 +17,7 @@ namespace checkpoint.Moedas
         public Moeda(string cultureCode, decimal cotacao)
         {
             this.cultureInfo = new CultureInfo(cultureCode); //instanciamos essa classe - codigo da moeda (pega-se em sites esse código)
-            RegionInfo ri = new RegionInfo(this.cultureInfo.LCID); //informações da região informada
+            RegionInfo ri = new RegionInfo(cultureCode); //informações da região informada
             Tipo = ri.CurrencySymbol; //simbolo da moeda padrão
             Nome = ri.CurrencyNativeName; //nome da moeda 
             this.Cotacao = cotacao;
