@@ -2,18 +2,33 @@
 
 namespace checkpoint.Moedas
 {
-    //Criamos o objeto moeda com suas caracteristicas(tipo e nome) que sera herdada pelas moedas(dolar,euro,iene,libras)
+    /// <summary>
+    ///  Criamos o objeto moeda com suas caracteristicas(tipo e nome) que serão herdados pelas moedas(dolar,euro,iene,libras)
+    /// </summary>
+
     public abstract class Moeda
     {
-        //Definimos as propriedades
-        //são private set, pois queremos que somente seja possivel alterar o tipo dela na classe que fará herança (ex:dolar)
+        /// <summary>
+        /// Definimos as propriedades
+        /// </summary>
+        /// <permission>
+        ///são private set, pois queremos que somente seja possivel alterar o tipo dela na classe que fará herança(ex:dolar)
+        ///</permission>
+
         public string Tipo { get; private set; } 
         public string Nome { get; private set; }//nome da moeda
         public decimal Cotacao { get; private set; }//propriedade que representa a cotação das moedas
 
-        private CultureInfo cultureInfo; //implementamos essa classe, para que possamos utilizar o recurso que exibirá o nome e o simboli da moeda
+        /// <summary>
+        /// Possibilita o uso de símbolo e nome da moeda.
+        /// </summary>
+        private CultureInfo cultureInfo;
 
-        //Criamos o contrutor Moeda, que recebeu como parametro o código da moeda do país, e a cotação do dia. (as classes moedas também heradaram essas informações especificas)
+        /// <summary>
+        /// Criamos o construtor Moeda
+        /// </summary>
+        /// <param name="cultureCode"  > o código da moeda do país></param>
+        /// <param name="cotacao"> cotação do dia </param>
         public Moeda(string cultureCode, decimal cotacao)
         {
             this.cultureInfo = new CultureInfo(cultureCode); //instanciamos essa classe - codigo da moeda (pega-se em sites esse código)
@@ -23,12 +38,16 @@ namespace checkpoint.Moedas
             this.Cotacao = cotacao;
         }
 
-        //formatara o valor que o usuário digitar
+        /// <summary>
+        /// formatará o valor que o usuário digitar
+        /// </summary>
+        /// <param name="valor"></param>
+        /// <returns></returns>
         public string FormatarValor(decimal valor)
         {
             return  string.Format(this.cultureInfo.NumberFormat, "{0:0.00}", valor);
         }
-        //realizará o calculo de conversão sempre que for chamado
+        
         public decimal Conversao(decimal valor, Moeda de)
         {
             decimal valorReal = valor * de.Cotacao;

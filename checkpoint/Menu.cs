@@ -3,7 +3,12 @@
     public class Menu
     {
         public Dictionary<string, Moeda> Conversoes { get; private set; } 
-        public string Tela { get; set; } //propriedade que mostrará na tela do usuário
+        
+        
+        /// <summary>
+        /// Propriedade tela exibe o menu na tela do usuário
+        /// </summary>
+        public string Tela { get; set; } 
 
         public Menu()
         {            
@@ -22,10 +27,13 @@
 
         }
 
-        //Metodo que chamará o metodo de conversão
-        //Primeramente, ele verificará se a Key informada pelo usuário existe, se existir ele exibirá na tela o calculo de Conversão da classe (moeda)
-        //se não existir, vai informar que a opão não foi encontrada
-        //Esse metodo será chamado na Classe Interface que é a comunicação direta com o usuário 
+        /// <summary>
+        /// Chamada do método de conversão na Classe Interface, que é a comunicação direta com o usuário. Verifica se a key informada pelo usuário existe. if true = exibe o cálculo de conversão da classe (moeda). Caso não:ele exibirá na tela o calculo de Conversão da classe (moeda)
+        /// </summary>
+        /// <param name="operacaoDe"></param>
+        /// <param name="operacaoPara"></param>
+        /// <param name="valor"></param>
+        /// <exception cref="Exception">Exceção de opção não encotrada nos escopos ></exception>
         public void Conversao(string operacaoDe, string operacaoPara, decimal valor)
         {
             if(!this.Conversoes.ContainsKey(operacaoPara))
