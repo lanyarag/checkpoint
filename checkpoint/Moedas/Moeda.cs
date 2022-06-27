@@ -17,7 +17,7 @@ namespace checkpoint.Moedas
         public Moeda(string cultureCode, decimal cotacao)
         {
             this.cultureInfo = new CultureInfo(cultureCode); //instanciamos essa classe - codigo da moeda (pega-se em sites esse código)
-            RegionInfo ri = new RegionInfo(this.cultureInfo.LCID); //informações da região informada
+            RegionInfo ri = new RegionInfo(cultureCode); //informações da região informada
             Tipo = ri.CurrencySymbol; //simbolo da moeda padrão
             Nome = ri.CurrencyNativeName; //nome da moeda 
             this.Cotacao = cotacao;
@@ -26,12 +26,13 @@ namespace checkpoint.Moedas
         //formatara o valor que o usuário digitar
         public string FormatarValor(decimal valor)
         {
-            return valor.ToString(this.cultureInfo.NumberFormat);
+            return  string.Format(this.cultureInfo.NumberFormat, "{0:0.00}", valor);
         }
         //realizará o calculo de conversão sempre que for chamado
-        public decimal Conversao(decimal valor)
+        public decimal Conversao(decimal valor, Moeda de)
         {
-            return valor * this.Cotacao;
+            decimal valorReal = valor * de.Cotacao;
+            return valorReal / this.Cotacao;
         }
 
     }
